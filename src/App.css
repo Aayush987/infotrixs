@@ -1,0 +1,43 @@
+/* styles.css */
+.main {
+    text-align: center;
+    background-color: #f3f3f3;
+    padding: 20px;
+    font-family: 'Mooli', sans-serif;
+  }
+    
+  .search {
+    margin: 20px 0;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #title {
+    font-size: 45px;
+    font-family: 'Croissant One', serif;
+    font-weight: bolder;
+  }
+
+  ul {
+    list-style-type: none;
+    text-align: left;
+  }
