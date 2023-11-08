@@ -47,7 +47,7 @@ const App = () => {
     };
 
     fetchData();
-  }, [buttonClicked]);
+  }, [Search,buttonClicked]);
   
   
 
@@ -59,9 +59,14 @@ const App = () => {
         
        <div className="search">
        <input type="text" placeholder="Enter Author's name.." onChange= {(e) => {setSearch(e.target.value)}} />
-       <button onClick={() => {setButtonClicked((prevState) => !prevState), console.log("clicked")}}>Search</button>
+       <button onClick={() => { if (Search) {
+      setButtonClicked(true);
+    } else {
+      setButtonClicked(false); // Set to false if the search box is empty
+    }
+  }}>Search</button>
        </div>
-
+       {/* (prevState) => !prevState */}
        {buttonClicked ? (
   <div>
     {Quote.map((quote,index) => (
